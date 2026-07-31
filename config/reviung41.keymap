@@ -51,45 +51,10 @@
     combos {
         compatible = "zmk,combos";
 
-        open_parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <24 25>;
-        };
-
-        open_square_b {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <26 27>;
-        };
-
-        open_curly_b {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <29 28>;
-        };
-
-        close_curly_b {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <30 31>;
-        };
-
-        close_squre_b {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <32 33>;
-        };
-
-        close_parenthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <35 34>;
-        };
-
         enter_right {
             bindings = <&kp ENTER>;
             key-positions = <8 9>;
             timeout-ms = <30>;
-        };
-
-        spacebar_right {
-            bindings = <&kp SPACE>;
-            key-positions = <20 21>;
         };
 
         equals {
@@ -101,6 +66,12 @@
             bindings = <&kp MINUS>;
             key-positions = <11 10>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <29 28>;
+            timeout-ms = <30>;
+        };
     };
 
     keymap {
@@ -108,18 +79,18 @@
 
         layer0 {
             bindings = <
-&lt 4 ESCAPE        &lt 3 Q         &lt 1 W             &kp E           &kp R      &kp T               &kp Y  &kp U        &kp I       &kp O                &kp P                        &mt MINUS BACKSPACE
-&mt LEFT_SHIFT TAB  &hm LEFT_GUI A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &kp F      &kp G               &kp H  &kp J        &hm RALT K  &hm RIGHT_CONTROL L  &hm RIGHT_COMMAND SEMICOLON  &hm RSHFT BACKSLASH
-&kp LEFT_GUI        &kp Z           &kp X               &kp C           &kp V      &kp B               &kp N  &kp M        &kp COMMA   &kp DOT              &mt LA(LCTRL) SLASH          &lt 5 SQT
-                                                        &kp DEL         &kp ENTER         &lt 1 SPACE         &lt 2 SPACE  &kp GRAVE
+&lt 4 ESCAPE      &lt 3 Q           &lt 1 W             &kp E               &kp R           &kp T                   &kp Y  &kp U        &kp I                &kp O                &kp P                      &mt MINUS BACKSPACE
+&mt TAB CAPSLOCK  &hm LEFT_SHIFT A  &hm LEFT_COMMAND S  &hm LEFT_CONTROL D  &hm F LEFT_ALT  &kp G                   &kp H  &hm RALT J   &hm RIGHT_CONTROL K  &hm RIGHT_COMMAND L  &hm RIGHT_SHIFT SEMICOLON  &mt BACKSLASH ENTER
+&kp LEFT_GUI      &kp Z             &kp X               &kp C               &kp V           &kp B                   &kp N  &kp M        &kp COMMA            &kp DOT              &kp SLASH                  &lt 5 SQT
+                                                        &kp DELETE          &kp ENTER              &lt 1 BACKSPACE         &lt 2 SPACE  &kp GRAVE
             >;
         };
 
         numbers_fs {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &kp N7  &kp N8        &kp N9  &kp EQUAL     &kp PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &kp N4  &kp N5        &kp N6  &kp ASTERISK  &kp MINUS  &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans          &kp N1  &kp N2        &kp N3  &kp PERIOD    &kp COMMA  &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans          &kp N7  &kp N8        &kp N9  &kp PLUS      &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp N4  &kp N5        &kp N6  &kp ASTERISK  &kp SLASH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp N1  &kp N2        &kp N3  &kp PERIOD    &kp COMMA  &trans
                         &trans  &trans          &trans          &kp NUMBER_0  &trans
             >;
         };
@@ -128,17 +99,17 @@
             bindings = <
 &kp LA(LEFT_GUI)  &kp LS(LEFT_GUI)  &kp LG(LS(NUMBER_4))  &kp LG(LC(LS(NUMBER_4)))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC          &kp HOME       &kp END   &kp UP    &trans     &trans  &trans
 &trans            &trans            &trans                &hm LALT C_MUTE           &kp C_VOL_DN          &kp C_VOLUME_UP               &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans            &trans            &trans                &kp C_PREV                &kp C_PLAY            &kp C_NEXT                    &kp PAGE_DOWN  &trans    &trans    &trans     &trans  &kp ENTER
+&trans            &trans            &trans                &kp C_PREV                &kp C_PLAY            &kp C_NEXT                    &kp PAGE_DOWN  &trans    &trans    &trans     &trans  &trans
                                                           &trans                    &trans                                      &trans                 &trans    &trans
             >;
         };
 
         coding_symb {
             bindings = <
-&kp LS(F6)  &none   &kp RG(RS(R))  &none     &none   &none           &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE           &kp RIGHT_BRACE  &kp LEFT_BRACKET       &kp RIGHT_BRACKET
-&trans      &trans  &trans         &trans    &none   &none           &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW           &kp LA(LG(RIGHT_ARROW))  &kp HOME         &kp END                &trans
-&trans      &none   &none          &trans    &none   &trans          &kp LEFT_ARROW          &kp DOWN_ARROW         &kp RIGHT_ARROW          &kp PAGE_UP      &kp RG(RA(PAGE_DOWN))  &kp RG(RA(ENTER))
-                                   &kp HOME  &trans          &trans                          &trans                 &kp END
+&trans  &none   &kp LA(LG(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))  &none   &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET       &kp RIGHT_BRACKET
+&trans  &trans  &trans                  &trans                   &none   &none           &kp LEFT_ARROW        &kp UP_ARROW           &kp DOWN_ARROW  &kp RIGHT        &kp DELETE             &trans
+&trans  &none   &none                   &trans                   &none   &trans          &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN   &kp END          &kp RG(RA(PAGE_DOWN))  &kp RG(RA(ENTER))
+                                        &trans                   &trans          &trans                        &trans                 &trans
             >;
         };
 
