@@ -107,7 +107,7 @@
 
         layer0 {
             bindings = <
-&lt 4 ESCAPE        &lt 3 Q         &lt 1 W             &kp E           &kp R      &kp T               &kp Y  &kp U        &kp I       &kp O                &kp P                        &mt BACKSPACE MINUS
+&lt 4 ESCAPE        &lt 3 Q         &lt 1 W             &kp E           &kp R      &kp T               &kp Y  &kp U        &kp I       &kp O                &kp P                        &mt MINUS BACKSPACE
 &mt LEFT_SHIFT TAB  &hm LEFT_GUI A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &kp F      &kp G               &kp H  &kp J        &hm RALT K  &hm RIGHT_CONTROL L  &hm RIGHT_COMMAND SEMICOLON  &hm RSHFT BACKSLASH
 &kp LEFT_GUI        &kp Z           &kp X               &kp C           &kp V      &kp B               &kp N  &kp M        &kp COMMA   &kp DOT              &mt LA(LCTRL) SLASH          &lt 5 SQT
                                                         &kp DEL         &kp ENTER         &lt 1 SPACE         &lt 2 SPACE  &kp GRAVE
