@@ -80,7 +80,7 @@
         layer0 {
             bindings = <
 &lt 4 ESCAPE      &lt 3 Q           &lt 1 W             &kp E               &kp R           &kp T                   &kp Y  &kp U        &kp I                &kp O                &kp P                      &mt MINUS BACKSPACE
-&mt TAB CAPSLOCK  &hm LEFT_SHIFT A  &hm LEFT_COMMAND S  &hm LEFT_CONTROL D  &hm F LEFT_ALT  &kp G                   &kp H  &hm RALT J   &hm RIGHT_CONTROL K  &hm RIGHT_COMMAND L  &hm RIGHT_SHIFT SEMICOLON  &mt BACKSLASH ENTER
+&mt CAPSLOCK TAB  &hm LEFT_SHIFT A  &hm LEFT_COMMAND S  &hm LEFT_CONTROL D  &hm F LEFT_ALT  &kp G                   &kp H  &hm RALT J   &hm RIGHT_CONTROL K  &hm RIGHT_COMMAND L  &hm RIGHT_SHIFT SEMICOLON  &mt BACKSLASH ENTER
 &kp LEFT_GUI      &kp Z             &kp X               &kp C               &kp V           &kp B                   &kp N  &kp M        &kp COMMA            &kp DOT              &kp SLASH                  &lt 5 SQT
                                                         &kp DELETE          &kp ENTER              &lt 1 BACKSPACE         &lt 2 SPACE  &kp GRAVE
             >;
