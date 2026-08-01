@@ -69,7 +69,7 @@
 
         space {
             bindings = <&kp SPACE>;
-            key-positions = <29 28>;
+            key-positions = <16 19>;
             timeout-ms = <30>;
         };
     };
@@ -79,10 +79,10 @@
 
         layer0 {
             bindings = <
-&lt 4 ESCAPE   &lt 3 Q           &lt 1 W             &kp E                &kp R               &kp T                   &kp Y  &kp U                &kp I            &kp O                &kp P                      &mt MINUS BACKSPACE
-&mt LSHFT TAB  &hm LEFT_SHIFT A  &hm LEFT_COMMAND S  &hm LEFT_ALT D       &hm LEFT_CONTROL F  &kp G                   &kp H  &hm RIGHT_CONTROL J  &hm RIGHT_ALT K  &hm RIGHT_COMMAND L  &hm RIGHT_SHIFT SEMICOLON  &mt BACKSLASH ENTER
-&kp LEFT_GUI   &kp Z             &kp X               &kp C                &kp V               &kp B                   &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH                  &lt 5 SQT
-                                                     &mt CAPSLOCK DELETE  &kp ENTER                  &lt 1 BACKSPACE         &lt 2 SPACE          &kp GRAVE
+&lt 4 ESCAPE   &lt 3 Q           &lt 1 W             &kp E           &kp R               &kp T                   &kp Y  &kp U                &kp I               &kp O                &kp P                      &mt MINUS BACKSPACE
+&mt LSHFT TAB  &hm LEFT_SHIFT A  &hm LEFT_COMMAND S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G                   &kp H  &hm RIGHT_CONTROL J  &hm RIGHT_ALT K     &hm RIGHT_COMMAND L  &hm RIGHT_SHIFT SEMICOLON  &mt BACKSLASH ENTER
+&kp LEFT_GUI   &kp Z             &kp X               &kp C           &kp V               &kp B                   &kp N  &kp M                &kp COMMA           &kp DOT              &kp SLASH                  &lt 5 SQT
+                                                     &lt 3 DELETE    &kp ENTER                  &lt 1 BACKSPACE         &lt 2 SPACE          &mt GRAVE CAPSLOCK
             >;
         };
 
@@ -106,9 +106,9 @@
 
         coding_symb {
             bindings = <
-&trans  &none   &kp LA(LG(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))  &none   &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET       &kp RIGHT_BRACKET
-&trans  &trans  &trans                  &trans                   &none   &none           &kp LEFT_ARROW        &kp UP_ARROW           &kp DOWN_ARROW  &kp RIGHT        &kp DELETE             &trans
-&trans  &none   &none                   &trans                   &none   &trans          &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN   &kp END          &kp RG(RA(PAGE_DOWN))  &kp RG(RA(ENTER))
+&trans  &none   &kp LA(LG(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))  &none   &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans  &trans                  &trans                   &none   &none           &kp LEFT_ARROW        &kp UP_ARROW           &kp DOWN_ARROW  &kp RIGHT        &kp DELETE        &trans
+&trans  &none   &none                   &trans                   &none   &trans          &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN   &kp END          &trans            &trans
                                         &trans                   &trans          &trans                        &trans                 &trans
             >;
         };
